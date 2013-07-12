@@ -1,0 +1,31 @@
+// 2.cpp : Defines the entry point for the console application.
+// Nombre: Rodrigo Alejandro Franco Rojas
+// Fecha: 12/07/2013
+// Descripcion: Calcula el area de un cuadrado
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+ float lado1,lado2,area;
+ printf("\t calculo del area del cuadrado\n");
+ printf("\t ******************************\n\n\n");
+ printf("ingrese lado1:");
+ scanf("%f",&lado1);
+ printf("ingrese lado2:");
+ scanf("%f",&lado2);
+ if((lado1>0)&&(lado2>0))
+ {
+  area=(lado1*lado2);
+  printf("\nEl area es: %f",area);
+ }
+ else
+ {
+  printf("\nError al ingresar los datos");
+  printf("\nNo se permite numeros negativos");
+ }
+ getch();
+  
+}
