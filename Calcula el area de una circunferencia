@@ -1,0 +1,33 @@
+// 3.cpp : Defines the entry point for the console application.
+// Nombre: Rodrigo Alejandro Franco Rojas
+// Fecha: 12/07/2013
+// Descripcion: Calcula el area de una circunferencia
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+ float radio,pi,area;
+ printf("\t calculo del area de la circunferencia\n");
+ printf("\t ******************************\n\n\n");
+ printf("ingrese radio:");
+ scanf("%f",&radio);
+ printf("ingrese pi:");
+ scanf("%f",&pi);
+ if((radio>0)&&(pi>0))
+ {
+  area=(pi*radio*radio);
+  printf("\nEl area es: %f",area);
+ }
+ else
+ {
+  printf("\nError al ingresar los datos");
+  printf("\nNo se permite numeros negativos");
+ }
+ getch();
+  
+}
+
