@@ -1,0 +1,31 @@
+// 1.cpp : Defines the entry point for the console application.
+// Nombre: Rodrigo Alejandro Franco Rojas
+// Fecha: 12/07/2013
+// Descripcion: Calcula el area de un triangulo en base a sus lados
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+ float base,altura,area;
+ printf("\t calculo del area del triangulo\n");
+ printf("\t ******************************\n\n\n");
+ printf("ingrese la base:");
+ scanf("%f",&base);
+ printf("ingrese la altura:");
+ scanf("%f",&altura);
+ if((base>0)&&(altura>0))
+ {
+  area=(base*altura)/2;
+  printf("\nEl area es: %f",area);
+ }
+ else
+ {
+  printf("\nError al ingresar los datos");
+  printf("\nNo se permite numeros negativos");
+ }
+ getch();
+  
+}
