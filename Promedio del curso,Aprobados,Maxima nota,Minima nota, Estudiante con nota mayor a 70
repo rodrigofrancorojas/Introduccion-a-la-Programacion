@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+  int n,i,nota,aprobados,notamax,notamin,mayorset;
+  float promedio;
+  printf("Introduzca el numero de estudiantes:");
+  scanf("%d",&n);
+  aprobados=0;
+  mayorset=0;
+  promedio=0;
+  for (i=0;i<n;i++)
+  { printf("Nota Nro %d":,i);
+    scanf("%d",&nota);
+  notamax=nota;
+	notamin=nota;
+	if((nota==51)||(nota>51))
+	aprobados=aprobados+1;
+	if(nota>70)
+	 mayorset=mayorset+1;
+	 promedio=promedio+nota;
+  }
+printf("promedio del curso:%g \n",(promedio/n));
+printf("aprobados:%d\n",aprobados);
+printf("maxima nota:%d\n",notamax);
+printf("minima nota:%d\n",notamin);
+printf("estudiantes con nota mayor a 70:%d\n",mayorset);
+getch();
+  }
